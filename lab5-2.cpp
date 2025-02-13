@@ -19,11 +19,11 @@ int main()
 	cin >> member;
 
 	if (toupper(member) == 'Y')
-		amountOwed == amountOwed * DISC_RATE;
+		amountOwed -= amountOwed * DISC_RATE;
 
 	if (amountOwed >= 100.0)
 		amountOwed += SHIP_RATE1;
-	else;
+	else
 		amountOwed += SHIP_RATE2;
 
 	cout << fixed << setprecision(2);
