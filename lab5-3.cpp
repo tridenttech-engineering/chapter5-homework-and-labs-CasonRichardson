@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
 	const double DISC_RATE1 = 0.1;
-	const double DISC_RATE2 = 0.05
+	const double DISC_RATE2 = 0.05;
 	const double SHIP_RATE1 = 0.99;
 	const double SHIP_RATE2 = 4.99;
 	double amountOwed = 0.0;
@@ -23,9 +23,9 @@ int main()
 	if (toupper(member) == 'Y')
 		discount = amountOwed * DISC_RATE1;
 	else
-		discount = amountOwed * DISC_RATE2
+		discount = amountOwed * DISC_RATE2;
 	
-	amountOwed -= discount
+	amountOwed -= discount;
 
 	if (amountOwed >= 100.0)
 		amountOwed += SHIP_RATE1;
